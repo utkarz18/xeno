@@ -20,11 +20,14 @@ namespace xeno {namespace graphics {
 			GLuint m_VBO;
 			IndexBuffer* m_IBO;
 			GLsizei m_IndexCount;
+			VertexData* m_Buffer;
 		public:
 			BatchRenderer2D();
 			~BatchRenderer2D();
+			void begin();
 			void submit(const Renderable2D* renderable) override;
-			void flush() override;
+			void end();
+			void flush() {};
 		private:
 			void init();
 		};

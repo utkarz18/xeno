@@ -1,7 +1,7 @@
 #include "src/graphics/window.h"
 #include "src/maths/maths.h"
 
-#include "src/graphics/renderable2D.h"
+#include "src/graphics/static_sprite.h"
 #include "src/graphics/Simple2DRenderer.h"
 
 int main()
@@ -20,8 +20,8 @@ int main()
 	shader.setUniformMat4("pr_matrix", ortho);
 	shader.setUniformMat4("ml_matrix", mat4::translation(vec3(4, 3, 0)));
 
-	Renderable2D sprite(maths::vec3(5, 5, 0), maths::vec2(4, 4), maths::vec4(1, 0, 1, 1), shader);
-	Renderable2D sprite2(maths::vec3(7, 1, 0), maths::vec2(2, 3), maths::vec4(0, 0, 1, 0.1f), shader);
+	StaticSprite sprite(5, 5, 4, 4,  maths::vec4(1, 0, 1, 1), shader);
+	StaticSprite sprite2(7, 1, 2, 3, maths::vec4(0, 0, 1, 0.1f), shader);
 	Simple2DRenderer renderer;
 
 	shader.setUniform2f("light_pos", vec2(4.0f, 1.5f));
