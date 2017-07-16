@@ -7,6 +7,6 @@ namespace xeno {namespace graphics {
 	{
 	private:
 	public:
-		Sprite(float x, float y, float width, float height, const maths::vec4& color, Shader& shader);
+		Sprite(float x, float y, float width, float height, const maths::vec4& color);
 	};
 }}

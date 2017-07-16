@@ -11,7 +11,7 @@ namespace xeno { namespace graphics {
 	private:
 		std::deque<const StaticSprite*> m_RenderQueue;
 	public:
-		virtual void submit(const Renderable2D* renderable) override;
-		virtual void flush() override;
+		void submit(const Renderable2D* renderable) override;
+		void flush() override;
 	};
 }}

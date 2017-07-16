@@ -1,26 +1,8 @@
-﻿Build started 7/14/2017 3:08:47 PM.
-     1>Project "D:\Visual Studio Projects\xeno-master\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt src\graphics\batchRenderer2D.cpp
-         batchRenderer2D.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.lib" /MACHINE:X86 "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\main.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\batchRenderer2D.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\buffer.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\indexbuffer.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vertexarray.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\Simple2DRenderer.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\shader.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\sprite.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\static_sprite.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\window.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\mat4.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vec2.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vec3.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vec4.obj"
-         Xeno-Core.vcxproj -> D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.exe
-     1>Done Building Project "D:\Visual Studio Projects\xeno-master\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:01.75
+﻿  main.cpp
+e:\softwares\visualstudio projects\xeno\xeno-core\main.cpp(30): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\main.cpp(32): warning C4305: '+=': truncation from 'double' to 'float'
+e:\softwares\visualstudio projects\xeno\xeno-core\main.cpp(34): warning C4305: '+=': truncation from 'double' to 'float'
+e:\softwares\visualstudio projects\xeno\xeno-core\main.cpp(53): warning C4305: 'argument': truncation from 'double' to 'const float'
+e:\softwares\visualstudio projects\xeno\xeno-core\main.cpp(76): warning C4018: '<': signed/unsigned mismatch
+  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.exe
+  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.pdb (Partial PDB)

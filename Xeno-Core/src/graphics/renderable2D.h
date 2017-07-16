@@ -25,7 +25,7 @@ namespace xeno { namespace graphics {
 		Renderable2D(maths::vec3 position, maths::vec2 size, maths::vec4 color)
 			:m_Position(position), m_Size(size), m_Color(color){}
 
-		virtual ~Renderable2D(){}
+		//virtual ~Renderable2D(){}
 
 		inline const maths::vec3& getPosition() const { return m_Position; }
 		inline const maths::vec2& getSize() const { return m_Size; }
