@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstddef>
 #include "renderer2D.h"
 
 namespace xeno {namespace graphics {

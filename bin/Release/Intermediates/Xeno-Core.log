@@ -1,0 +1,45 @@
+﻿Build started 7/17/2017 6:34:27 PM.
+     1>Project "D:\Visual Studio Projects\xeno-master\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oi /Ot /Oy- /GL /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp src\graphics\Simple2DRenderer.cpp src\graphics\batchRenderer2D.cpp src\graphics\sprite.cpp src\graphics\static_sprite.cpp
+         main.cpp
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+         D:\Visual Studio Projects\xeno-master\Dependencies\GLFW\include\GLFW/glfw3.h(98): note: see previous definition of 'APIENTRY'
+     1>main.cpp(31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>main.cpp(81): warning C4018: '<': signed/unsigned mismatch
+         Simple2DRenderer.cpp
+         batchRenderer2D.cpp
+     1>src\graphics\batchRenderer2D.cpp(63): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>src\graphics\batchRenderer2D.cpp(64): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>src\graphics\batchRenderer2D.cpp(65): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>src\graphics\batchRenderer2D.cpp(66): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+         sprite.cpp
+         static_sprite.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\xeno-master\bin\Release\Xeno-Core.exe" /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Visual Studio Projects\xeno-master\bin\Release\Xeno-Core.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\xeno-master\bin\Release\Xeno-Core.lib" /MACHINE:X86 /SAFESEH "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\main.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\batchRenderer2D.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\buffer.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\indexbuffer.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\vertexarray.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\Simple2DRenderer.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\shader.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\sprite.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\static_sprite.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\window.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\mat4.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\vec2.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\vec3.obj"
+         "D:\Visual Studio Projects\xeno-master\bin\Release\Intermediates\vec4.obj"
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Generating code
+         3 of 229 functions ( 1.3%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+         Finished generating code
+           1 functions had inline decision re-evaluated but remain unchanged
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\Visual Studio Projects\xeno-master\bin\Release\vc120.pdb'; linking object as if no debug info
+         Xeno-Core.vcxproj -> D:\Visual Studio Projects\xeno-master\bin\Release\Xeno-Core.exe
+     1>Done Building Project "D:\Visual Studio Projects\xeno-master\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.33

@@ -5,6 +5,7 @@
 #include "src/graphics/sprite.h"
 #include "src/graphics/Simple2DRenderer.h"
 #include "src/graphics/batchRenderer2D.h"
+#include "src/utils/timer.h"
 
 #include <time.h>
 
@@ -63,6 +64,10 @@ int main()
 
 	shader.setUniform2f("light_pos", vec2(4.0f, 1.5f));
 	shader.setUniform4f("colour", vec4(0.2f, 0.3f, 0.8f, 1.0f));
+
+	Timer time;
+	float timer = 0;
+	unsigned int frames = 0;
 	while (!window.closed())
 	{
 		window.clear();
@@ -82,8 +87,14 @@ int main()
 		renderer.end();
 #endif
 		renderer.flush();
-		printf("Sprites %d\n", sprites.size());
 		window.update();
+		frames++;
+		if (time.elapsed() - timer > 1.0f)
+		{
+			timer += 1.0f;
+			printf("%d FPS\n", frames);
+			frames = 0;
+		}
 	}
 
 	return 0;
