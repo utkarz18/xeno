@@ -1,33 +1,32 @@
-﻿Build started 7/17/2017 4:47:01 PM.
-     1>Project "D:\Visual Studio Projects\xeno-master\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
+﻿Build started 7/18/2017 8:14:11 PM.
+     1>Project "D:\Visual Studio Projects\xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
      1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
-         d:\visual studio projects\xeno-master\dependencies\glfw\include\glfw\glfw3.h(98): note: see previous definition of 'APIENTRY'
-     1>d:\visual studio projects\xeno-master\xeno-core\main.cpp(31): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>d:\visual studio projects\xeno-master\xeno-core\main.cpp(33): warning C4305: '+=': truncation from 'double' to 'float'
-     1>d:\visual studio projects\xeno-master\xeno-core\main.cpp(35): warning C4305: '+=': truncation from 'double' to 'float'
-     1>d:\visual studio projects\xeno-master\xeno-core\main.cpp(54): warning C4305: 'argument': truncation from 'double' to 'const float'
-     1>d:\visual studio projects\xeno-master\xeno-core\main.cpp(81): warning C4018: '<': signed/unsigned mismatch
+         d:\visual studio projects\xeno\dependencies\glfw\include\glfw\glfw3.h(98): note: see previous definition of 'APIENTRY'
+     1>d:\visual studio projects\xeno\xeno-core\main.cpp(33): warning C4305: '+=': truncation from 'double' to 'float'
+     1>d:\visual studio projects\xeno\xeno-core\main.cpp(35): warning C4305: '+=': truncation from 'double' to 'float'
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.lib" /MACHINE:X86 "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\main.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\batchRenderer2D.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\buffer.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\indexbuffer.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vertexarray.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\Simple2DRenderer.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\shader.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\sprite.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\static_sprite.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\window.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\mat4.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vec2.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vec3.obj"
-         "D:\Visual Studio Projects\xeno-master\bin\Debug\Intermediates\vec4.obj"
-         Xeno-Core.vcxproj -> D:\Visual Studio Projects\xeno-master\bin\Debug\Xeno-Core.exe
-     1>Done Building Project "D:\Visual Studio Projects\xeno-master\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.lib" /MACHINE:X86 "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\main.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\batchRenderer2D.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\buffer.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\indexbuffer.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vertexarray.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\layer.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\tilelayer.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\Simple2DRenderer.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\shader.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\sprite.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\static_sprite.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\window.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\mat4.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vec2.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vec3.obj"
+         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vec4.obj"
+         Xeno-Core.vcxproj -> D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.exe
+     1>Done Building Project "D:\Visual Studio Projects\xeno\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.69
+Time Elapsed 00:00:02.05
