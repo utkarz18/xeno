@@ -34,7 +34,7 @@ int main()
 	{
 		for (float x = -16.0f; x < 16.0f; x += 0.1)
 		{
-			layer.add(new Sprite(x, y, 0.04f, 0.04f, maths::vec4(rand() % 1000 / 1000.0f, 0, 1, 1)));
+			layer.add(new Sprite(x, y, 0.09f, 0.09f, maths::vec4(rand() % 1000 / 1000.0f, 0, 1, 1)));
 		}
 	}
 
@@ -51,7 +51,7 @@ int main()
 		window.getMousePosition(x, y);
 		
 		shader.enable();
-		shader.setUniform2f("light_pos", vec2(-8, -3));
+		shader.setUniform2f("light_pos", vec2((float)(x * 32.0f / 960.0f - 16.0f), (float)(9.0f - y * 18.0f / 540.0f)));
 		shader2.enable();
 		shader2.setUniform2f("light_pos", vec2((float)(x * 32.0f / 960.0f - 16.0f), (float)(9.0f - y * 18.0f / 540.0f)));
 		

@@ -1,9 +1,23 @@
-﻿Build started 7/18/2017 6:13:02 PM.
+﻿Build started 7/21/2017 4:00:41 PM.
      1>Project "D:\Visual Studio Projects\xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oi /Ot /Oy- /GL /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno\bin\Release\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno\bin\Release\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt src\graphics\layers\layer.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oi /Ot /Oy- /GL /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno\bin\Release\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno\bin\Release\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp src\graphics\Simple2DRenderer.cpp src\graphics\batchRenderer2D.cpp src\graphics\layers\layer.cpp src\graphics\layers\tilelayer.cpp src\graphics\shader.cpp src\graphics\sprite.cpp src\graphics\static_sprite.cpp src\maths\mat4.cpp
+         main.cpp
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+         D:\Visual Studio Projects\xeno\Dependencies\GLFW\include\GLFW/glfw3.h(98): note: see previous definition of 'APIENTRY'
+         Simple2DRenderer.cpp
+         batchRenderer2D.cpp
+     1>src\graphics\batchRenderer2D.cpp(63): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>src\graphics\batchRenderer2D.cpp(64): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>src\graphics\batchRenderer2D.cpp(65): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>src\graphics\batchRenderer2D.cpp(66): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
          layer.cpp
      1>src\graphics\layers\layer.cpp(18): warning C4018: '<': signed/unsigned mismatch
+         tilelayer.cpp
+         shader.cpp
+         sprite.cpp
+         static_sprite.cpp
+         mat4.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\xeno\bin\Release\Xeno-Core.exe" /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Visual Studio Projects\xeno\bin\Release\Xeno-Core.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\xeno\bin\Release\Xeno-Core.lib" /MACHINE:X86 /SAFESEH "D:\Visual Studio Projects\xeno\bin\Release\Intermediates\main.obj"
          "D:\Visual Studio Projects\xeno\bin\Release\Intermediates\batchRenderer2D.obj"
@@ -23,9 +37,9 @@
          "D:\Visual Studio Projects\xeno\bin\Release\Intermediates\vec4.obj"
      1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
          Generating code
-         2 of 254 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
-           0 functions were new in current compilation
-           0 functions had inline decision re-evaluated but remain unchanged
+         101 of 335 functions (30.1%) were compiled, the rest were copied from previous compilation.
+           81 functions were new in current compilation
+           7 functions had inline decision re-evaluated but remain unchanged
          Finished generating code
      1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\Visual Studio Projects\xeno\bin\Release\vc120.pdb'; linking object as if no debug info
          Xeno-Core.vcxproj -> D:\Visual Studio Projects\xeno\bin\Release\Xeno-Core.exe
@@ -33,4 +47,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.66
+Time Elapsed 00:00:08.45

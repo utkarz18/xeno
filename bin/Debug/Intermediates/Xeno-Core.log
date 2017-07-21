@@ -1,12 +1,22 @@
-﻿Build started 7/18/2017 8:14:11 PM.
+﻿Build started 7/21/2017 4:03:10 PM.
      1>Project "D:\Visual Studio Projects\xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTCu /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp src\graphics\Simple2DRenderer.cpp src\graphics\batchRenderer2D.cpp src\graphics\layers\layer.cpp src\graphics\layers\tilelayer.cpp
+         tilelayer.cpp
+         layer.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\layers\layer.cpp(18): warning C4018: '<': signed/unsigned mismatch
+         batchRenderer2D.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(63): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(64): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(65): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(66): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+         Simple2DRenderer.cpp
          main.cpp
      1>c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
          d:\visual studio projects\xeno\dependencies\glfw\include\glfw\glfw3.h(98): note: see previous definition of 'APIENTRY'
      1>d:\visual studio projects\xeno\xeno-core\main.cpp(33): warning C4305: '+=': truncation from 'double' to 'float'
      1>d:\visual studio projects\xeno\xeno-core\main.cpp(35): warning C4305: '+=': truncation from 'double' to 'float'
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.lib" /MACHINE:X86 "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\main.obj"
          "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\batchRenderer2D.obj"
@@ -29,4 +39,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.05
+Time Elapsed 00:00:05.49
