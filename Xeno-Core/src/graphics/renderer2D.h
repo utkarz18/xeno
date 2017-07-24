@@ -2,19 +2,22 @@
 
 #include <GL/glew.h>
 #include "../maths/maths.h"
-#include "renderable2D.h"
+#include <vector>
 
 namespace xeno { namespace graphics {
 
+	class Renderable2D;
 	class Renderer2D
 	{
 	protected:
 		std::vector<maths::mat4> m_TransformationStack;
+		const maths::mat4* m_TransformationBack;
 
 	protected:
 		Renderer2D()
 		{
 			m_TransformationStack.push_back(maths::mat4::indentity());
+			m_TransformationBack = &m_TransformationStack.back();
 		}
 
 	public:
@@ -24,6 +27,8 @@ namespace xeno { namespace graphics {
 				m_TransformationStack.push_back(matrix);
 			else
 				m_TransformationStack.push_back(m_TransformationStack.back() * matrix);
+			
+			m_TransformationBack = &m_TransformationStack.back();
 		}
 
 		void pop()

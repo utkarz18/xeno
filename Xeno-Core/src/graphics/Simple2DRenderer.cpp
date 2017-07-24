@@ -1,6 +1,5 @@
 #include "Simple2DRenderer.h"
 
-
 namespace xeno {namespace graphics {
 	
 	void Simple2DRenderer::submit(const Renderable2D* renderable)

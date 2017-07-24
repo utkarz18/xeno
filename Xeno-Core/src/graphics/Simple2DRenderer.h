@@ -2,6 +2,7 @@
 
 #include <deque>
 #include "renderer2D.h"
+#include "renderable2D.h"
 #include "static_sprite.h"
 
 namespace xeno { namespace graphics {
