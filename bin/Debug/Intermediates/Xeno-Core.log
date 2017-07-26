@@ -1,46 +1,13 @@
-﻿Build started 7/26/2017 8:18:08 PM.
-     1>Project "D:\Visual Studio Projects\xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTCu /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp src\graphics\Simple2DRenderer.cpp src\graphics\batchRenderer2D.cpp src\graphics\layers\group.cpp src\graphics\layers\layer.cpp src\graphics\layers\tilelayer.cpp src\graphics\sprite.cpp src\graphics\static_sprite.cpp src\graphics\texture.cpp
-         batchRenderer2D.cpp
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(78): warning C4018: '<': signed/unsigned mismatch
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(103): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(104): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(105): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(106): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(143): warning C4018: '<': signed/unsigned mismatch
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         texture.cpp
-         static_sprite.cpp
-         sprite.cpp
-         tilelayer.cpp
-         layer.cpp
-         group.cpp
-         Simple2DRenderer.cpp
-         main.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib FreeImage.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.lib" /MACHINE:X86 "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\main.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\batchRenderer2D.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\buffer.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\indexbuffer.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vertexarray.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\group.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\layer.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\tilelayer.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\Simple2DRenderer.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\shader.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\sprite.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\static_sprite.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\texture.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\window.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\mat4.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vec2.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vec3.obj"
-         "D:\Visual Studio Projects\xeno\bin\Debug\Intermediates\vec4.obj"
-         Xeno-Core.vcxproj -> D:\Visual Studio Projects\xeno\bin\Debug\Xeno-Core.exe
-     1>Done Building Project "D:\Visual Studio Projects\xeno\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:01.96
+﻿  batchRenderer2D.cpp
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(78): warning C4018: '<': signed/unsigned mismatch
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(104): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(105): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(106): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(107): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(147): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+  e:\softwares\visualstudio projects\xeno\dependencies\glfw\include\glfw\glfw3.h(98): note: see previous definition of 'APIENTRY'
+  Generating Code...
+  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.exe
+  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.pdb (Partial PDB)

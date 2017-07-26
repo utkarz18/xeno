@@ -70,8 +70,8 @@ namespace xeno { namespace graphics {
 		const GLuint tid = renderable->getTID();
 
 		unsigned int colour = 0;
+		
 		float ts = 0.0f;
-
 		if(tid > 0)
 		{
 			bool found = false;
@@ -83,19 +83,20 @@ namespace xeno { namespace graphics {
 					found = true;
 					break;
 				}
-
-				if (!found)
-				{
-					if (m_TextureSlots.size() >= 32)
-					{
-						end();
-						flush();
-						begin();
-					}
-					m_TextureSlots.push_back(tid);
-					ts = (float)(m_TextureSlots.size());
-				}
 			}
+
+			if (!found)
+			{
+				if (m_TextureSlots.size() >= 32)
+				{
+					end();
+					flush();
+					begin();
+				}
+				m_TextureSlots.push_back(tid);
+				ts = (float)(m_TextureSlots.size());
+			}
+			
 		}
 		
 		else 
@@ -116,16 +117,19 @@ namespace xeno { namespace graphics {
 
 		m_Buffer->vertex = *m_TransformationBack * maths::vec3(position.x, position.y + size. y, position.z);
 		m_Buffer->uv = UV[1];
+		m_Buffer->tid = ts;
 		m_Buffer->color = colour;
 		m_Buffer++;
 	
 		m_Buffer->vertex = *m_TransformationBack * maths::vec3(position.x + size.x, position.y + size.y, position.z);
 		m_Buffer->uv = UV[2];
+		m_Buffer->tid = ts;
 		m_Buffer->color = colour;
 		m_Buffer++;
 
 		m_Buffer->vertex = *m_TransformationBack * maths::vec3(position.x + size.x, position.y, position.z);
 		m_Buffer->uv = UV[3];
+		m_Buffer->tid = ts;
 		m_Buffer->color = colour;
 		m_Buffer++;
 

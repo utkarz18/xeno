@@ -28,14 +28,22 @@ int main()
 
 
 	TileLayer layer(&shader);
-	Texture* texture = new Texture("test.png");
+	Texture* textures[] = 
+	{
+		new Texture("test.png"),
+		new Texture("tb.png"),
+		new Texture("tc.png")
+	};
 
 	for (float y = -9.0f; y < 9.0f; y++)
-	{	
+	{
 		for (float x = -16.0f; x < 16.0f; x++)
 		{
 			//layer.add(new Sprite(x, y, 0.9f, 0.9f, maths::vec4(rand() % 1000 / 1000.0f, 0, 1, 1)));
-			layer.add(new Sprite(x, y, 0.9f, 0.9f, texture));
+			if (rand() % 4 == 0)
+				layer.add(new Sprite(x, y, 0.9f, 0.9f, maths::vec4(rand() % 1000 / 1000.0f, 0, 1, 1)));
+			else
+				layer.add(new Sprite(x, y, 0.9f, 0.9f, textures[rand() % 3]));
 		}
 	}
 
@@ -44,19 +52,19 @@ int main()
 	shader.enable();
 	shader.setUniform1iv("textures", texIDs, 10);
 	shader.setUniformMat4("pr_matrix", maths::mat4::orthographic(-16.0f, 16.0f, -9.0f, 9.0f, -1.0f, 1.0f));
-		
+
 	Timer time;
 	float timer = 0;
 	unsigned int frames = 0;
 	while (!window.closed())
 	{
-		window.clear();	
+		window.clear();
 		double x, y;
 		window.getMousePosition(x, y);
-		
+
 		shader.enable();
 		shader.setUniform2f("light_pos", vec2((float)(x * 32.0f / 960.0f - 16.0f), (float)(9.0f - y * 18.0f / 540.0f)));
-	
+
 		layer.render();
 
 		window.update();
@@ -68,7 +76,8 @@ int main()
 			frames = 0;
 		}
 	}
-	delete texture;
+	for (int i = 0; i < 3; i++)
+		delete textures[i];
 	return 0;
 }
 #endif
