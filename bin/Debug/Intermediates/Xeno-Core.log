@@ -1,13 +1,2 @@
-﻿  batchRenderer2D.cpp
-e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(78): warning C4018: '<': signed/unsigned mismatch
-e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(104): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(105): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(106): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(107): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(147): warning C4018: '<': signed/unsigned mismatch
-  main.cpp
-c:\program files (x86)\windows kits\8.1\include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
-  e:\softwares\visualstudio projects\xeno\dependencies\glfw\include\glfw\glfw3.h(98): note: see previous definition of 'APIENTRY'
-  Generating Code...
-  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.exe
+﻿  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.exe
   Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.pdb (Partial PDB)
