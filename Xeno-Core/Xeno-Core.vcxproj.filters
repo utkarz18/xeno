@@ -228,6 +228,9 @@
     <ClCompile Include="ext\freetype-gl\edtaa3func.c">
       <Filter>Source Files\ext\freetype-gl</Filter>
     </ClCompile>
+    <ClCompile Include="src\graphics\label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\window.h">
@@ -349,6 +352,9 @@
     </ClInclude>
     <ClInclude Include="ext\freetype-gl\edtaa3func.h">
       <Filter>Header Files\ext\freetype-gl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\label.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

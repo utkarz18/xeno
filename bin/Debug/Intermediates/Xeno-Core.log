@@ -1,2 +1,9 @@
-﻿  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.exe
-  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.pdb (Partial PDB)
+﻿Build started 8/1/2017 5:37:50 PM.
+     1>Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         Xeno-Core.vcxproj -> D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.exe
+     1>Done Building Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.13

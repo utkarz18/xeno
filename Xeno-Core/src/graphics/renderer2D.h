@@ -39,6 +39,7 @@ namespace xeno { namespace graphics {
 
 		virtual void begin() {};
 		virtual void submit(const Renderable2D* renderable) = 0;
+		virtual void drawString(const std::string& text, const maths::vec3& position, const maths::vec4& color) {};
 		virtual void end() {};
 		virtual void flush() = 0;
 	};

@@ -1,49 +1,88 @@
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\vc140.pdb
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\vc140.idb
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\fttype1.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftwinfnt.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\bdf.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftcache.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\cff.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\type1cid.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftgzip.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftlzw.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\pcf.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\pfr.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\psaux.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\pshinter.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\psmodule.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\raster.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\sfnt.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\smooth.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\truetype.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\type1.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\type42.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\winfnt.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\vector.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\autofit.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftbase.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftbbox.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftbitmap.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftdebug.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftfntfmt.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftfstype.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftgasp.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftglyph.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftgxval.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftinit.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftlcdfil.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftmm.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftotval.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftpatent.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftpfr.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftstroke.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftsynth.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\ftsystem.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\platform.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\texture-atlas.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\texture-font.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\utf8-utils.obj
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\xeno-core.tlog\cl.command.1.tlog
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\xeno-core.tlog\cl.read.1.tlog
-e:\softwares\visualstudio projects\xeno\bin\debug\intermediates\xeno-core.tlog\cl.write.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\vc140.pdb
+d:\visual studio projects\xeno\bin\debug\intermediates\vc140.idb
+d:\visual studio projects\xeno\bin\debug\intermediates\fttype1.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftwinfnt.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\bdf.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftcache.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\cff.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\type1cid.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftgzip.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftlzw.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\pcf.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\pfr.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\psaux.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\pshinter.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\psmodule.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\raster.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\sfnt.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\smooth.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\truetype.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\type1.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\type42.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\winfnt.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\vector.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\autofit.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftbase.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftbbox.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftbitmap.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftdebug.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftfntfmt.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftfstype.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftgasp.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftglyph.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftgxval.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftinit.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftlcdfil.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftmm.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftotval.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftpatent.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftpfr.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftstroke.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftsynth.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\ftsystem.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\distance-field.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\edtaa3func.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\platform.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\texture-atlas.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\texture-font.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\utf8-utils.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\main.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\batchrenderer2d.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\buffer.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\indexbuffer.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\vertexarray.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\group.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\layer.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\tilelayer.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\simple2drenderer.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\shader.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\sprite.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\static_sprite.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\texture.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\window.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\mat4.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\vec2.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\vec3.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\vec4.obj
+d:\visual studio projects\xeno\bin\debug\intermediates\label.obj
+d:\visual studio projects\xeno\bin\debug\xeno-core.ilk
+d:\visual studio projects\xeno\bin\debug\xeno-core.exe
+d:\visual studio projects\xeno\bin\debug\xeno-core.pdb
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\cl.command.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\cl.read.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\cl.write.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link-cvtres.read.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link-cvtres.write.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link-rc.read.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link-rc.write.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.5548-cvtres.read.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.5548-cvtres.write.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.5548-rc.read.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.5548-rc.write.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.5548.delete.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.5548.read.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.5548.write.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.command.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.delete.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.read.1.tlog
+d:\visual studio projects\xeno\bin\debug\intermediates\xeno-core.tlog\link.write.1.tlog
