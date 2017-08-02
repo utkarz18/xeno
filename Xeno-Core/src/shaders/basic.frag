@@ -21,7 +21,15 @@ void main()
 	vec4 texColor = fs_in.color;
 	if(fs_in.tid > 0.0)
 	{
-		texColor = texture(textures[tid], fs_in.uv);
+		int tid = int(fs_in.tid - 0.5);
+		if(tid == 0)
+			texColor = texture(textures[2], fs_in.uv);
+		else if(tid == 1)
+			texColor = texture(textures[1], fs_in.uv);
+		else if(tid == 2)
+			texColor = texture(textures[0], fs_in.uv);
+		else if(tid == 3)
+			texColor = texture(textures[3], fs_in.uv);
 	}
-	color = texColor; //* intensity;
+	color = vec4(1,0,1,1); //* intensity;
 }

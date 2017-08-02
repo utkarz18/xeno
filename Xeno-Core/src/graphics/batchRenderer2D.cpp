@@ -55,8 +55,7 @@ namespace xeno { namespace graphics {
 		glBindVertexArray(0);
 
 		m_FTAtlas = ftgl::texture_atlas_new(512, 512, 1);
-		m_FTFont = ftgl::texture_font_new_from_file(m_FTAtlas, 30, "arial.ttf");
-		ftgl::texture_font_get_glyph(m_FTFont, "Hello");
+		m_FTFont = ftgl::texture_font_new_from_file(m_FTAtlas, 10, "Vera.ttf");
 	}
 
 	void BatchRenderer2D::begin()
@@ -142,6 +141,13 @@ namespace xeno { namespace graphics {
 
 	void BatchRenderer2D::drawString(const std::string& text, const maths::vec3& position, const maths::vec4& color)
 	{
+		int r = color.x * 255.0;
+		int g = color.y* 255.0;
+		int b = color.z * 255.0;
+		int a = color.w * 255.0;
+
+		unsigned int colour = a << 24 | b << 16 | g << 8 | r;
+
 		using namespace ftgl;
 		float ts = 0.0f;
 		bool found = false;
@@ -167,27 +173,65 @@ namespace xeno { namespace graphics {
 			ts = (float)(m_TextureSlots.size());
 		}
 
-		m_Buffer->vertex = maths::vec3(-8, -8, 0);
-		m_Buffer->uv = maths::vec2(0, 1);
-		m_Buffer->tid = ts;
-		m_Buffer++;
+		float scaleX = 960.0 / 32.0;
+		float scaleY = 540.0 / 18.0;
 
-		m_Buffer->vertex = maths::vec3(-8, 8, 0);
-		m_Buffer->uv = maths::vec2(0, 0);
-		m_Buffer->tid = ts;
-		m_Buffer++;
+		float x = position.x;
 
-		m_Buffer->vertex = maths::vec3(8, 8, 0);
-		m_Buffer->uv = maths::vec2(1, 0);
-		m_Buffer->tid = ts;
-		m_Buffer++;
+		for (int i = 0; i < text.length(); i++)
+		{
+			const char* c_text = text.c_str();
+			texture_glyph_t* glyph = texture_font_get_glyph(m_FTFont, c_text + i);
+			texture_font_load_glyphs(m_FTFont, c_text);
+			if (glyph != NULL)
+			{
+				float kerning = 0.0f;
+				if (i > 0)
+				{
+					kerning = texture_glyph_get_kerning(glyph, c_text + i - 1);
+					x += kerning / scaleX;
+				}
+				
+				x += kerning;
+				float x0 = x + glyph->offset_x / scaleX;
+				float y0 = position.y + glyph->offset_y / scaleY;
+				float x1 = x0 + glyph->width / scaleX;
+				float y1 = y0 - glyph->height / scaleY;
 
-		m_Buffer->vertex = maths::vec3(8, -8, 0);
-		m_Buffer->uv = maths::vec2(1, 1);
-		m_Buffer->tid = ts;
-		m_Buffer++;
+				float u0 = glyph->s0;
+				float v0 = glyph->t0;
+				float u1 = glyph->s1;
+				float v1 = glyph->t1;
 
-		m_IndexCount += 6;
+				m_Buffer->vertex = *m_TransformationBack * maths::vec3(x0, y0, 0);
+				m_Buffer->uv = maths::vec2(u0, v0);
+				m_Buffer->tid = ts;
+				m_Buffer->color = 1;
+				m_Buffer++;
+
+				m_Buffer->vertex = *m_TransformationBack * maths::vec3(x0, y1, 0);
+				m_Buffer->uv = maths::vec2(u0, v1);
+				m_Buffer->tid = ts;
+				m_Buffer->color = 0;
+				m_Buffer++;
+
+				m_Buffer->vertex = *m_TransformationBack * maths::vec3(x1, y1, 0);
+				m_Buffer->uv = maths::vec2(u1, v1);
+				m_Buffer->tid = ts;
+				m_Buffer->color = 1;
+				m_Buffer++;
+
+				m_Buffer->vertex = *m_TransformationBack * maths::vec3(x1, y0, 0);
+				m_Buffer->uv = maths::vec2(u1, v0);
+				m_Buffer->tid = ts;
+				m_Buffer->color = 1;
+				m_Buffer++;
+
+				m_IndexCount += 6;
+
+				x = glyph->advance_x;
+			}
+		}
 	}
 	void BatchRenderer2D::end()
 	{
