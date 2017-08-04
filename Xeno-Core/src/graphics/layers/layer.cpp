@@ -33,8 +33,7 @@ namespace xeno { namespace graphics {
 		for(const Renderable2D* renderable : m_Renderables)
 			renderable->submit(m_Renderer);
 		  
-		/*Font* font = new Font("Arial", "arial.ttf", 32);
-		m_Renderer->drawString("Hello", maths::vec3(-8, 0, 0), *font, maths::vec4(0, 0, 0, 0));*/
+		m_Renderer->drawString("1", maths::vec3(-8, 0, 0), maths::vec4(0, 0, 0, 0));
 
 		m_Renderer->end();
 		

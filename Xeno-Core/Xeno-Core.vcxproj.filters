@@ -219,19 +219,7 @@
     <ClCompile Include="ext\freetype\src\base\ftfntfmt.c">
       <Filter>Source Files\ext\freetype\FT_MODULES</Filter>
     </ClCompile>
-    <ClCompile Include="ext\freetype-gl\distance-field.c">
-      <Filter>Source Files\ext\freetype-gl</Filter>
-    </ClCompile>
-    <ClCompile Include="ext\freetype-gl\utf8-utils.c">
-      <Filter>Source Files\ext\freetype-gl</Filter>
-    </ClCompile>
-    <ClCompile Include="ext\freetype-gl\edtaa3func.c">
-      <Filter>Source Files\ext\freetype-gl</Filter>
-    </ClCompile>
     <ClCompile Include="src\graphics\label.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\graphics\Font.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -347,19 +335,7 @@
     <ClInclude Include="ext\freetype-gl\vector.h">
       <Filter>Header Files\ext\freetype-gl</Filter>
     </ClInclude>
-    <ClInclude Include="ext\freetype-gl\distance-field.h">
-      <Filter>Header Files\ext\freetype-gl</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype-gl\utf8-utils.h">
-      <Filter>Header Files\ext\freetype-gl</Filter>
-    </ClInclude>
-    <ClInclude Include="ext\freetype-gl\edtaa3func.h">
-      <Filter>Header Files\ext\freetype-gl</Filter>
-    </ClInclude>
     <ClInclude Include="src\graphics\label.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\graphics\Font.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

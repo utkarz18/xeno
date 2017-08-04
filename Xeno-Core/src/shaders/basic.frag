@@ -22,6 +22,7 @@ void main()
 	if(fs_in.tid > 0.0)
 	{
 		int tid = int(fs_in.tid - 0.5);
+		//texColor = texture(textures[2], fs_in.uv);
 		if(tid == 0)
 			texColor = texture(textures[2], fs_in.uv);
 		else if(tid == 1)
