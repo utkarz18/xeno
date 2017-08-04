@@ -30,10 +30,11 @@ namespace xeno { namespace graphics {
 		m_Shader->enable();
 
 		m_Renderer->begin();
-		/*for(const Renderable2D* renderable : m_Renderables)
-			renderable->submit(m_Renderer);*/
+		for(const Renderable2D* renderable : m_Renderables)
+			renderable->submit(m_Renderer);
 		  
-		m_Renderer->drawString("12", maths::vec3(-8, 0, 0), maths::vec4(0, 0, 0, 0));
+		/*Font* font = new Font("Arial", "arial.ttf", 32);
+		m_Renderer->drawString("Hello", maths::vec3(-8, 0, 0), *font, maths::vec4(0, 0, 0, 0));*/
 
 		m_Renderer->end();
 		

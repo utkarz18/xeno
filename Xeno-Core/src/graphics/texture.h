@@ -12,6 +12,7 @@ namespace xeno {namespace graphics {
 		std::string m_Filename;
 		GLuint m_TID;
 		GLsizei m_Width, m_Height;
+	
 	public:
 		Texture(const std::string& filename);
 		~Texture();
@@ -21,7 +22,7 @@ namespace xeno {namespace graphics {
 		inline const unsigned int getID() const { return m_TID; }
 		inline const unsigned int getWidth() const { return m_Width; }
 		inline const unsigned int getHeight() const { return m_Height; }
-
+	
 	private:
 		GLuint load();
 	};

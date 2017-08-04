@@ -3,6 +3,7 @@
 #include <GL/glew.h>
 #include "../maths/maths.h"
 #include <vector>
+#include "Font.h"
 
 namespace xeno { namespace graphics {
 
@@ -39,7 +40,7 @@ namespace xeno { namespace graphics {
 
 		virtual void begin() {};
 		virtual void submit(const Renderable2D* renderable) = 0;
-		virtual void drawString(const std::string& text, const maths::vec3& position, const maths::vec4& color) {};
+		virtual void drawString(const std::string& text, const maths::vec3& position, const Font& font, const maths::vec4& color) {};
 		virtual void end() {};
 		virtual void flush() = 0;
 	};

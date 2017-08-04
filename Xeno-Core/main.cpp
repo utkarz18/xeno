@@ -10,6 +10,7 @@
 #include "src/graphics/layers/group.h"
 #include <FreeImage.h>
 #include "src/graphics/texture.h"
+#include "src/graphics/label.h"
 
 #if 1
 int main()
@@ -47,6 +48,10 @@ int main()
 		}
 	}
 
+	Font* font = new Font("Arial", "arial.ttf", 32);
+	Label* fps = new Label("Hello", 0.4f, 0.4f, font, vec4(1, 0, 1, 1));
+
+	layer.add(fps);
 
 	GLint texIDs[] = { 0, 1, 2, 3, 4, 5, 6 ,7, 8, 9 };
 	shader.enable();

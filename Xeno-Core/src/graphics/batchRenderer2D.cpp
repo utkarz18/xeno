@@ -53,9 +53,6 @@ namespace xeno { namespace graphics {
 
 		m_IBO = new IndexBuffer(indices, RENDERER_INDICES_SIZE);
 		glBindVertexArray(0);
-
-		m_FTAtlas = ftgl::texture_atlas_new(512, 512, 1);
-		m_FTFont = ftgl::texture_font_new_from_file(m_FTAtlas, 10, "Vera.ttf");
 	}
 
 	void BatchRenderer2D::begin()
@@ -139,7 +136,7 @@ namespace xeno { namespace graphics {
 		m_IndexCount += 6;
 	}
 
-	void BatchRenderer2D::drawString(const std::string& text, const maths::vec3& position, const maths::vec4& color)
+	void BatchRenderer2D::drawString(const std::string& text, const maths::vec3& position, const Font& font,  const maths::vec4& color)
 	{
 		int r = color.x * 255.0;
 		int g = color.y* 255.0;
@@ -149,11 +146,12 @@ namespace xeno { namespace graphics {
 		unsigned int colour = a << 24 | b << 16 | g << 8 | r;
 
 		using namespace ftgl;
+
 		float ts = 0.0f;
 		bool found = false;
 		for (int i = 0; i < m_TextureSlots.size(); i++)
 		{
-			if (m_TextureSlots[i] == m_FTAtlas->id)
+			if (m_TextureSlots[i] == font.getID())
 			{
 				ts = (float)(i + 1);
 				found = true;
@@ -169,7 +167,7 @@ namespace xeno { namespace graphics {
 				flush();
 				begin();
 			}
-			m_TextureSlots.push_back(m_FTAtlas->id);
+			m_TextureSlots.push_back(font.getID());
 			ts = (float)(m_TextureSlots.size());
 		}
 
@@ -178,11 +176,13 @@ namespace xeno { namespace graphics {
 
 		float x = position.x;
 
+		texture_font_t* ftFont = font.getFTFont();
+
 		for (int i = 0; i < text.length(); i++)
 		{
 			const char* c_text = text.c_str();
-			texture_glyph_t* glyph = texture_font_get_glyph(m_FTFont, c_text + i);
-			texture_font_load_glyphs(m_FTFont, c_text);
+			texture_glyph_t* glyph = texture_font_get_glyph(ftFont, c_text + i);
+			texture_font_load_glyphs(ftFont, c_text);
 			if (glyph != NULL)
 			{
 				float kerning = 0.0f;
