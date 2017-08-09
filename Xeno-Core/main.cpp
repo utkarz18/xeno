@@ -27,7 +27,6 @@ int main()
 	shader.enable();
 	shader.setUniform2f("light_pos", vec2(4.0f, 1.5f));
 
-
 	TileLayer layer(&shader);
 	Texture* textures[] = 
 	{
@@ -40,18 +39,19 @@ int main()
 	{
 		for (float x = -16.0f; x < 16.0f; x++)
 		{
-			//layer.add(new Sprite(x, y, 0.9f, 0.9f, maths::vec4(rand() % 1000 / 1000.0f, 0, 1, 1)));
 			if (rand() % 4 == 0)
-				layer.add(new Sprite(x, y, 0.9f, 0.9f, maths::vec4(rand() % 1000 / 1000.0f, 0, 1, 1)));
+				layer.add(new Sprite(x, y, 0.9f, 0.9f, vec4(rand() % 1000 / 1000.0f, 0, 1, 1)));
 			else
 				layer.add(new Sprite(x, y, 0.9f, 0.9f, textures[rand() % 3]));
 		}
 	}
 
-	/*Font* font = new Font("Arial", "arial.ttf", 32);
-	Label* fps = new Label("Hello", 0.4f, 0.4f, font, vec4(1, 0, 1, 1));
+	Group* g = new Group(maths::mat4::translation(maths::vec3(-15.8f, 7.0f, 0.0f)));
+	Label* fps = new Label("", 0.4f, 0.4f, maths::vec4(1, 1, 1, 1));
+	g->add(new Sprite(0, 0, 5, 1.5f, maths::vec4(0.3f, 0.3f, 0.3f, 0.9f)));
+	g->add(fps);
 
-	layer.add(fps);*/
+	layer.add(g);
 
 	GLint texIDs[] = { 0, 1, 2, 3, 4, 5, 6 ,7, 8, 9 };
 	shader.enable();
@@ -77,6 +77,7 @@ int main()
 		if (time.elapsed() - timer > 1.0f)
 		{
 			timer += 1.0f;
+			fps->text = std::to_string(frames) + " fps";
 			printf("%d FPS\n", frames);
 			frames = 0;
 		}

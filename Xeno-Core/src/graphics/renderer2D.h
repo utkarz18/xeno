@@ -35,6 +35,8 @@ namespace xeno { namespace graphics {
 		{
 			if(m_TransformationStack.size() > 1)
 				m_TransformationStack.pop_back();
+
+			m_TransformationBack = &m_TransformationStack.back();
 		}
 
 		virtual void begin() {};

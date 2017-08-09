@@ -6,8 +6,8 @@ namespace xeno { namespace graphics {
 	
 	class Label : public Renderable2D
 	{
-	private:
-		std::string m_Text;
+	public:
+		std::string text;
 		maths::vec3& position;
 		float x, y;
 	public:
