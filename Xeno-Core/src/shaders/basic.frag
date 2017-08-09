@@ -22,15 +22,15 @@ void main()
 	if(fs_in.tid > 0.0)
 	{
 		int tid = int(fs_in.tid - 0.5);
-		//texColor =  texture(textures[tid], fs_in.uv);
+		//texColor = fs_in.color * texture(textures[tid], fs_in.uv);
 		if(tid == 0)
-			texColor = texture(textures[0], fs_in.uv);
+			texColor =  fs_in.color * texture(textures[0], fs_in.uv);
 		else if(tid == 1)
-			texColor = texture(textures[1], fs_in.uv);
+			texColor = fs_in.color * texture(textures[1], fs_in.uv);
 		else if(tid == 2)
-			texColor = texture(textures[2], fs_in.uv);
+			texColor = fs_in.color * texture(textures[2], fs_in.uv);
 		else if(tid == 4)
 			texColor = fs_in.color * texture(textures[4], fs_in.uv);
 	}
-	color = texColor; //* intensity;
+	color = texColor;// * intensity;
 }

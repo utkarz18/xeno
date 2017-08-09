@@ -1,21 +1,28 @@
 #pragma once
 
+#define WINDOWS_TIMER 0
+
+#if WINDOWS_TIMER
 #include <Windows.h>
+#else
+#include <chrono>
+#endif
+
 namespace xeno {
 
+#if WINDOWS_TIMER
 	class Timer
 	{
 	private:
 		LARGE_INTEGER m_Start;
 		double m_Frequency;
-
 	public:
-		Timer() 
+		Timer()
 		{
 			LARGE_INTEGER frequency;
 			QueryPerformanceFrequency(&frequency);
 			m_Frequency = 1.0 / frequency.QuadPart;
-			QueryPerformanceCounter(&m_Start);	
+			QueryPerformanceCounter(&m_Start);
 		}
 
 		void reset()
@@ -32,4 +39,30 @@ namespace xeno {
 		}
 
 	};
+#else
+	class Timer
+	{
+	private:
+		typedef std::chrono::high_resolution_clock HighResolutionClock;
+		typedef std::chrono::duration<float, std::milli> milliseconds_type;
+		std::chrono::time_point<HighResolutionClock> m_Start;
+	public:
+		Timer()
+		{
+			reset();
+		}
+
+		void reset()
+		{
+			m_Start = HighResolutionClock::now();
+		}
+
+		float elapsed()
+		{
+			return std::chrono::duration_cast<milliseconds_type>(HighResolutionClock::now() - m_Start).count() / 1000.0f;
+		}
+
+	};
+#endif
+
 }

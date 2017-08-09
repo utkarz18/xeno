@@ -22,8 +22,8 @@ namespace xeno{ namespace graphics {
 		GLuint vertex = glCreateShader(GL_VERTEX_SHADER);
 		GLuint fragment = glCreateShader(GL_FRAGMENT_SHADER);
 
-		std::string vertSourceString = fileUtils::read_file(m_VertPath);
-		std::string fragSourceString = fileUtils::read_file(m_FragPath);
+		std::string vertSourceString = read_file(m_VertPath);
+		std::string fragSourceString = read_file(m_FragPath);
 
 		const char* vertSource = vertSourceString.c_str();
 		const char* fragSource = fragSourceString.c_str();
