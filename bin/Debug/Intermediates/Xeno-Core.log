@@ -1,79 +1,9 @@
-﻿Build started 8/9/2017 7:38:08 PM.
+﻿Build started 8/10/2017 2:40:22 PM.
      1>Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D GLEW_STATIC /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTCu /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-     1>d:\visual studio projects\xeno\xeno-core\main.cpp(81): warning C4018: '<': signed/unsigned mismatch
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib FreeImage.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.lib" /MACHINE:X86 "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\platform.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\texture-atlas.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\texture-font.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vector.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\autofit.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftbase.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftbbox.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftbitmap.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftdebug.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftfntfmt.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftfstype.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftgasp.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftglyph.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftgxval.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftinit.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftlcdfil.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftmm.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftotval.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftpatent.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftpfr.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftstroke.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftsynth.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftsystem.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\fttype1.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftwinfnt.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\bdf.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftcache.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\cff.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\type1cid.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftgzip.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftlzw.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\pcf.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\pfr.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\psaux.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\pshinter.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\psmodule.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\raster.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\sfnt.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\smooth.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\truetype.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\type1.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\type42.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\winfnt.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\main.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\batchRenderer2D.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\buffer.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\indexbuffer.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vertexarray.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\label.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\group.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\layer.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\tilelayer.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\Simple2DRenderer.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\shader.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\sprite.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\static_sprite.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\texture.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\window.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\mat4.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vec2.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vec3.obj"
-         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vec4.obj"
+     1>Link:
          Xeno-Core.vcxproj -> D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.exe
      1>Done Building Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.05
+Time Elapsed 00:00:00.16

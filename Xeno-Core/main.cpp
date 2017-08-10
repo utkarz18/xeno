@@ -11,6 +11,7 @@
 #include <FreeImage.h>
 #include "src/graphics/texture.h"
 #include "src/graphics/label.h"
+#include "src/graphics/font_manager.h"
 
 int main()
 {
@@ -49,7 +50,7 @@ int main()
 	}
 
 	Group* g = new Group(maths::mat4::translation(maths::vec3(-15.8f, 7.0f, 0.0f)));
-	Label* fps = new Label("", 0.4f, 0.4f, 0xffffffff);
+	Label* fps = new Label("", 0.4f, 0.4f, "Arial", 32 , 0xffffffff);
 	g->add(new Sprite(0, 0, 5, 1.5f, 0x505050DD));
 	g->add(fps);
 
@@ -63,7 +64,7 @@ int main()
 	Timer time;
 	float timer = 0;
 	unsigned int frames = 0;
-	float t = 0.01f;
+	float t = 0.0f;
 	while (!window.closed())
 	{	
 		t += 0.01f;
@@ -94,6 +95,9 @@ int main()
 			frames = 0;
 		}
 	}
+
+	FontManager::clean();
+
 	for (int i = 0; i < 3; i++)
 		delete textures[i];
 	return 0;

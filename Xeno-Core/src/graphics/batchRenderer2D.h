@@ -4,8 +4,6 @@
 #include "renderer2D.h"
 #include "renderable2D.h"
 
-#include "../../ext/freetype-gl/freetype-gl.h"
-
 namespace xeno {namespace graphics {
 
 #define RENDERER_MAX_SPRITES	60000
@@ -28,8 +26,6 @@ namespace xeno {namespace graphics {
 			GLsizei m_IndexCount;
 			VertexData* m_Buffer;
 
-			ftgl::texture_atlas_t* m_FTAtlas;
-			ftgl::texture_font_t* m_FTFont;
 			std::vector<GLuint> m_TextureSlots;
 
 		public:
@@ -37,7 +33,7 @@ namespace xeno {namespace graphics {
 			~BatchRenderer2D();
 			void begin() override;
 			void submit(const Renderable2D* renderable) override;
-			void drawString(const std::string& text, const maths::vec3& position, unsigned int color) override;
+			void drawString(const std::string& text, const maths::vec3& position, const Font& font, unsigned int color) override;
 			void end() override;
 			void flush() override;
 		private:

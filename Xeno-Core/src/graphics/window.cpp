@@ -11,6 +11,8 @@ namespace xeno {namespace graphics {
 		if (!init())
 			glfwTerminate();
 
+		FontManager::add(new Font("Arial", "arial.ttf", 32));
+
 		for (int i = 0; i < MAX_KEYS; i++)
 		{
 			m_Keys[i] = false;

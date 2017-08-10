@@ -32,5 +32,5 @@ void main()
 		else if(tid == 4)
 			texColor = fs_in.color * texture(textures[4], fs_in.uv);
 	}
-	color = texColor;// * intensity;
+	color = texColor * intensity;
 }
