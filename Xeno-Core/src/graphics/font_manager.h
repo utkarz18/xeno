@@ -11,7 +11,7 @@ namespace xeno {namespace graphics{
 		static std::vector<Font*> m_Fonts;
 	
 	private:
-		FontManager();
+		FontManager() { }
 
 	public:
 		static void add(Font* font);

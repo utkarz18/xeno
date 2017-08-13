@@ -17,7 +17,7 @@ namespace xeno {
 			std::string m_Filename;
 
 		public:
-			Font(std::string name, std::string filename, unsigned int size);
+			Font(const std::string& name, const std::string& filename, unsigned int size);
 
 			inline ftgl::texture_font_t* getFTFont() const { return m_FTFont; }
 			inline const unsigned int getID() const { return m_FTAtlas->id; }

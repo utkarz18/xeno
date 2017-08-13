@@ -4,6 +4,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "font_manager.h"
+#include "../audio/audio_manager.h"
 
 namespace xeno { namespace graphics {
 

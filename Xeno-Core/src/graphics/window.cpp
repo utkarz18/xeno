@@ -12,6 +12,7 @@ namespace xeno {namespace graphics {
 			glfwTerminate();
 
 		FontManager::add(new Font("Arial", "arial.ttf", 32));
+		audio::AudioManager::init();
 
 		for (int i = 0; i < MAX_KEYS; i++)
 		{
@@ -30,6 +31,8 @@ namespace xeno {namespace graphics {
 
 	Window::~Window()
 	{
+		FontManager::clean();
+		audio::AudioManager::clean();
 		glfwTerminate();
 	}
 
