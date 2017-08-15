@@ -67,8 +67,12 @@ int main()
 	shader.setUniform1iv("textures", texIDs, 10);
 	shader.setUniformMat4("pr_matrix", maths::mat4::orthographic(-16.0f, 16.0f, -9.0f, 9.0f, -1.0f, 1.0f));
 
-	AudioManager::add(new Audio("test", "test.wav"));
-	AudioManager::get("test")->play();
+	//AudioManager::add(new Audio("test", "test1.wav"));
+	AudioManager::add(new Audio("loop", "loop.ogg"));
+	//AudioManager::get("loop")->play();
+
+	float gain = 0.5f;
+	AudioManager::get("loop")->setGain(gain);
 
 	Timer time;
 	float timer = 0;
@@ -92,6 +96,30 @@ int main()
 		{
 			float c = sin(t) / 2 + 0.5f;
 			rs[i]->setColor(maths::vec4(c, 0, 1, 1));
+		}
+
+		if(window.isKeyTyped(GLFW_KEY_P))
+			AudioManager::get("loop")->play();
+		
+		if (window.isKeyTyped(GLFW_KEY_L))
+			AudioManager::get("loop")->loop();
+
+		if (window.isKeyTyped(GLFW_KEY_1))
+			AudioManager::get("loop")->pause();
+
+		if (window.isKeyTyped(GLFW_KEY_S))
+			AudioManager::get("loop")->stop();
+
+		if (window.isKeyTyped(GLFW_KEY_UP))
+		{
+			gain += 0.05f;
+			AudioManager::get("loop")->setGain(gain);
+		}
+
+		if (window.isKeyTyped(GLFW_KEY_DOWN))
+		{
+			gain -= 0.05f;
+			AudioManager::get("loop")->setGain(gain);
 		}
 
 		window.update();

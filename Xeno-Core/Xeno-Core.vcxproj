@@ -259,6 +259,7 @@
     <ClInclude Include="src\maths\vec4.h" />
     <ClInclude Include="src\utils\fileUtils.h" />
     <ClInclude Include="src\utils\imageUtils.h" />
+    <ClInclude Include="src\utils\stringutils.h" />
     <ClInclude Include="src\utils\timer.h" />
   </ItemGroup>
   <ItemGroup>

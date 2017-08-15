@@ -30,7 +30,7 @@ namespace xeno { namespace audio {
 
 
 	void AudioManager::clean()
-	{
+	{	
 		for (int i = 0; i < m_AudioList.size(); i++)
 			delete m_AudioList[i];
 

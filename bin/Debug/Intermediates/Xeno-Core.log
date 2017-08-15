@@ -1,2 +1,8 @@
-﻿  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.exe
+﻿  main.cpp
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\softwares\visualstudio projects\xeno\xeno-core\main.cpp(95): warning C4018: '<': signed/unsigned mismatch
+  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.exe
   Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Xeno\bin\Debug\Xeno-Core.pdb (Partial PDB)

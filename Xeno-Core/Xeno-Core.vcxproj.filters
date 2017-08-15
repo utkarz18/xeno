@@ -58,23 +58,29 @@
     <Filter Include="Shaders">
       <UniqueIdentifier>{9cafd2c3-b306-49bc-b49b-7da38bf79398}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\graphics\graphics">
-      <UniqueIdentifier>{6275a185-c2d2-44bb-901b-e4d994a655e9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics\graphics\buffers">
-      <UniqueIdentifier>{4514d404-e486-4130-8d0c-66677f7da6ae}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics\graphics\layers">
-      <UniqueIdentifier>{b258bf54-7ebe-4148-aa7f-c79fd5ced761}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics\graphics\renderables">
-      <UniqueIdentifier>{1aea1cac-9edc-42eb-bd79-6c7880ca428c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\ext\gorilla-audio">
       <UniqueIdentifier>{7f479c1f-c8ba-4e37-91a0-65aef9da5c72}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\ext\gorilla-audio">
       <UniqueIdentifier>{8237eea9-ac9e-4642-9c4a-fe4c377adc14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{6275a185-c2d2-44bb-901b-e4d994a655e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics\buffers">
+      <UniqueIdentifier>{4514d404-e486-4130-8d0c-66677f7da6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics\layers">
+      <UniqueIdentifier>{b258bf54-7ebe-4148-aa7f-c79fd5ced761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics\renderables">
+      <UniqueIdentifier>{1aea1cac-9edc-42eb-bd79-6c7880ca428c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{a9c88a23-5b4b-4583-bd60-641ea5194551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\audio">
+      <UniqueIdentifier>{2c964362-791a-4d8f-b8d5-d63198ebd96c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -289,10 +295,10 @@
       <Filter>Source Files\ext\gorilla-audio</Filter>
     </ClCompile>
     <ClCompile Include="src\audio\audio_manager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\audio</Filter>
     </ClCompile>
     <ClCompile Include="src\audio\audio.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\audio</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -336,34 +342,34 @@
       <Filter>Header Files\ext\freetype-gl</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\buffers\buffer.h">
-      <Filter>Source Files\graphics\graphics\buffers</Filter>
+      <Filter>Header Files\graphics\buffers</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\buffers\indexbuffer.h">
-      <Filter>Source Files\graphics\graphics\buffers</Filter>
+      <Filter>Header Files\graphics\buffers</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\buffers\vertexarray.h">
-      <Filter>Source Files\graphics\graphics\buffers</Filter>
+      <Filter>Header Files\graphics\buffers</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\layers\tilelayer.h">
-      <Filter>Source Files\graphics\graphics\layers</Filter>
+      <Filter>Header Files\graphics\layers</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\layers\layer.h">
-      <Filter>Source Files\graphics\graphics\layers</Filter>
+      <Filter>Header Files\graphics\layers</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\layers\group.h">
-      <Filter>Source Files\graphics\graphics\layers</Filter>
+      <Filter>Header Files\graphics\layers</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\label.h">
-      <Filter>Source Files\graphics\graphics\renderables</Filter>
+      <Filter>Header Files\graphics\renderables</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\renderable2D.h">
-      <Filter>Source Files\graphics\graphics\renderables</Filter>
+      <Filter>Header Files\graphics\renderables</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\sprite.h">
-      <Filter>Source Files\graphics\graphics\renderables</Filter>
+      <Filter>Header Files\graphics\renderables</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\static_sprite.h">
-      <Filter>Source Files\graphics\graphics\renderables</Filter>
+      <Filter>Header Files\graphics\renderables</Filter>
     </ClInclude>
     <ClInclude Include="src\utils\fileUtils.h">
       <Filter>Header Files\utils</Filter>
@@ -393,28 +399,28 @@
       <Filter>Header Files\maths</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\window.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\texture.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\Simple2DRenderer.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\shader.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\renderer2D.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\batchRenderer2D.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\font.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\font_manager.h">
-      <Filter>Source Files\graphics\graphics</Filter>
+      <Filter>Header Files\graphics</Filter>
     </ClInclude>
     <ClInclude Include="ext\gorilla-audio\ga.h">
       <Filter>Header Files\ext\gorilla-audio</Filter>
@@ -437,11 +443,14 @@
     <ClInclude Include="ext\gorilla-audio\common\gc_types.h">
       <Filter>Header Files\ext\gorilla-audio</Filter>
     </ClInclude>
+    <ClInclude Include="src\utils\stringutils.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
     <ClInclude Include="src\audio\audio_manager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\audio</Filter>
     </ClInclude>
     <ClInclude Include="src\audio\audio.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\audio</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
