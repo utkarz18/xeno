@@ -16,6 +16,8 @@ namespace xeno { namespace graphics {
 			30, 31
 		};
 
+		m_Shader->setUniform1iv("textures", texIDs, 32);
+
 		m_Shader->disable();
 	}
 
