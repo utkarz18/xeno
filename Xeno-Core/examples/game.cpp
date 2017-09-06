@@ -26,10 +26,14 @@ public:
 	{
 		window = createWindow("Test Game", 960, 540);
 		FontManager::get()->setScale(window->getWidth() / 32.0f, window->getHeight() / 18.0f);
+
+		std::string soundLoc;
 #ifdef XENO_PLATFORM_WEB
 		shader = new Shader("res/shaders/basic.es3.vert", "res/shaders/basic.es3.frag");
+		soundLoc = "test.ogg";
 #else	
 		shader = new Shader("src/shaders/basic.vert", "src/shaders/basic.frag");
+		soundLoc = "res/test.ogg";
 #endif
 		layer = new Layer(new BatchRenderer2D(), shader, maths::mat4::orthographic(-16.0f, 16.0f, -9.0f, 9.0f, -1.0f, 1.0f));
 		sprite = new Sprite(0.0f, 0.0f, 4, 4, new Texture("Tex", "res/tb.png"));
@@ -38,7 +42,7 @@ public:
 		fps = new Label("", -15.5f, 7.8f, 0xffffffff);
 		layer->add(fps);
 
-		audio::AudioManager::add(new audio::Audio("Lol", "res/test.ogg"))->play();
+		audio::AudioManager::add(new audio::Audio("Lol", soundLoc))->play();
 	}
 
 	void tick() override

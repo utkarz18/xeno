@@ -14,14 +14,14 @@ namespace xeno { namespace audio {
 
 #ifdef XENO_PLATFORM_WEB
 		EM_ASM(
-		Module.SoundManager = {};
-		Module.SoundManager.m_AudioList = {};
-		Module.SoundManagerAdd = function(name, filename) { Module.SoundManager.m_AudioList[name] = new Audio(filename); };
-		Module.SoundManagerPlay = function(name) { Module.SoundManager.m_AudioList[name].play(); };
-		Module.SoundManagerPause = function(name) { Module.SoundManager.m_AudioList[name].pause(); };
-		Module.SoundManagerStop = function(name) { Module.SoundManagerPause(name); Module.SoundManager.m_AudioList[name].currentTime = 0; Module.SoundManager.m_AudioList[name].loop = false; };
-		Module.SoundManagerLoop = function(name) { Module.SoundManager.m_AudioList[name].play(); Module.SoundManager.m_AudioList[name].loop = true; };
-		Module.SoundManagerSetGain = function(name, gain) { Module.SoundManager.m_AudioList[name].volume = gain; };
+		Module.AudioManager = {};
+		Module.AudioManager.m_Sounds = {};
+		Module.AudioManagerAdd = function(name, filename) { Module.AudioManager.m_Sounds[name] = new Audio(filename); };
+		Module.AudioManagerPlay = function(name) { Module.AudioManager.m_Sounds[name].play(); };
+		Module.AudioManagerPause = function(name) { Module.AudioManager.m_Sounds[name].pause(); };
+		Module.AudioManagerStop = function(name) { Module.AudioManagerPause(name); Module.AudioManager.m_Sounds[name].currentTime = 0; Module.AudioManager.m_Sounds[name].loop = false; };
+		Module.AudioManagerLoop = function(name) { Module.AudioManager.m_Sounds[name].play(); Module.AudioManager.m_Sounds[name].loop = true; };
+		Module.AudioManagerSetGain = function(name, gain) { Module.AudioManager.m_Sounds[name].volume = gain; };
 		);
 #else
 		gc_initialize(0);
@@ -35,7 +35,7 @@ namespace xeno { namespace audio {
 		m_AudioList.push_back(audio);
 
 #ifdef XENO_PLATFORM_WEB
-		SoundManagerAdd(audio->getName().c_str(), audio->getFileName().c_str());
+		AudioManagerAdd(audio->getName().c_str(), audio->getFileName().c_str());
 #endif
 		return audio;
 	}

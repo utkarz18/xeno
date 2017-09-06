@@ -11,12 +11,12 @@
 #endif
 
 #ifdef XENO_PLATFORM_WEB
-	extern "C" void SoundManagerAdd(const char* name, const char* filename);
-	extern "C" void SoundManagerPlay(const char* name);
-	extern "C" void SoundManagerPause(const char* name);
-	extern "C" void SoundManagerStop(const char* name);
-	extern "C" void SoundManagerLoop(const char* name);
-	extern "C" void SoundManagerSetGain(const char* name, double gain);
+	extern "C" void AudioManagerAdd(const char* name, const char* filename);
+	extern "C" void AudioManagerPlay(const char* name);
+	extern "C" void AudioManagerPause(const char* name);
+	extern "C" void AudioManagerStop(const char* name);
+	extern "C" void AudioManagerLoop(const char* name);
+	extern "C" void AudioManagerSetGain(const char* name, double gain);
 #endif
 
 namespace xeno { namespace audio {

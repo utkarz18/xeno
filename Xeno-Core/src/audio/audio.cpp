@@ -37,7 +37,7 @@ namespace xeno { namespace audio {
 			return;
 
 #ifdef XENO_PLATFORM_WEB
-		SoundManagerPlay(m_Name.c_str());
+		AudioManagerPlay(m_Name.c_str());
 #else
 		gc_int32 quit = 0;
 		
@@ -59,7 +59,7 @@ namespace xeno { namespace audio {
 			return;
 
 #ifdef XENO_PLATFORM_WEB
-		SoundManagerLoop(m_Name.c_str());
+		AudioManagerLoop(m_Name.c_str());
 #else
 		gc_int32 quit = 0;
 		gau_SampleSourceLoop* loopSrc = 0;
@@ -81,7 +81,7 @@ namespace xeno { namespace audio {
 			return;
 
 #ifdef XENO_PLATFORM_WEB
-		SoundManagerPause(m_Name.c_str());
+		AudioManagerPause(m_Name.c_str());
 #else
 		ga_handle_stop(m_Handle);
 #endif
@@ -95,7 +95,7 @@ namespace xeno { namespace audio {
 			return;
 
 #ifdef XENO_PLATFORM_WEB
-		SoundManagerStop(m_Name.c_str());
+		AudioManagerStop(m_Name.c_str());
 #else
 		ga_handle_destroy(m_Handle);
 		m_Handle = nullptr;
@@ -110,7 +110,7 @@ namespace xeno { namespace audio {
 			return;
 
 #ifdef XENO_PLATFORM_WEB
-		SoundManagerSetGain(m_Name.c_str(), gain);
+		AudioManagerSetGain(m_Name.c_str(), gain);
 #else
 		ga_handle_setParamf(m_Handle, GA_HANDLE_PARAM_GAIN, gain);
 #endif
