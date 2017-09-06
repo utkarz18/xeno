@@ -4,7 +4,10 @@
 namespace xeno { namespace audio {
 
 	Audio::Audio(const std::string& name, const std::string& filename)
-		: m_Name(name), m_Filename(filename), m_Playing(false), m_Handle(nullptr)
+		: m_Name(name), m_Filename(filename), m_Playing(false)
+#ifndef XENO_PLATFORM_WEB
+		, m_Handle(nullptr)
+#endif
 	{
 		std::vector<std::string> split = split_string(m_Filename, '.');
 		if (split.size() < 2)
@@ -12,15 +15,20 @@ namespace xeno { namespace audio {
 			std::cout << "[Sound] Invalid file name '" << m_Filename << "'!" << std::endl;
 			return;
 		}
+
+#ifndef XENO_PLATFORM_WEB
 		m_Sound = gau_load_sound_file(filename.c_str(), split.back().c_str());
 
 		if (m_Sound == nullptr)
 			std::cout << "[Sound] Could not load file '" << m_Filename << "'!" << std::endl;
+#endif
 	}
 
 	Audio::~Audio()
 	{
+#ifndef XENO_PLATFORM_WEB
 		ga_sound_release(m_Sound);
+#endif
 	}
 
 	void Audio::play()
@@ -28,6 +36,9 @@ namespace xeno { namespace audio {
 		if (m_Playing)
 			return;
 
+#ifdef XENO_PLATFORM_WEB
+		SoundManagerPlay(m_Name.c_str());
+#else
 		gc_int32 quit = 0;
 		
 		if (m_Handle == nullptr)
@@ -37,6 +48,8 @@ namespace xeno { namespace audio {
 		}
 		
 		ga_handle_play(m_Handle);
+#endif
+
 		m_Playing = true;
 	}
 
@@ -45,6 +58,9 @@ namespace xeno { namespace audio {
 		if (m_Playing)
 			return;
 
+#ifdef XENO_PLATFORM_WEB
+		SoundManagerLoop(m_Name.c_str());
+#else
 		gc_int32 quit = 0;
 		gau_SampleSourceLoop* loopSrc = 0;
 		
@@ -54,6 +70,8 @@ namespace xeno { namespace audio {
 			m_Handle->audio = this;
 		}
 		ga_handle_play(m_Handle);
+#endif
+
 		m_Playing = true;
 	}
 
@@ -62,7 +80,12 @@ namespace xeno { namespace audio {
 		if (!m_Playing)
 			return;
 
+#ifdef XENO_PLATFORM_WEB
+		SoundManagerPause(m_Name.c_str());
+#else
 		ga_handle_stop(m_Handle);
+#endif
+
 		m_Playing = false;
 	}
 
@@ -70,8 +93,14 @@ namespace xeno { namespace audio {
 	{
 		if (!m_Playing)
 			return;
+
+#ifdef XENO_PLATFORM_WEB
+		SoundManagerStop(m_Name.c_str());
+#else
 		ga_handle_destroy(m_Handle);
 		m_Handle = nullptr;
+#endif
+
 		m_Playing = false;
 	}	
 
@@ -79,14 +108,21 @@ namespace xeno { namespace audio {
 	{
 		if (!m_Playing)
 			return;
+
+#ifdef XENO_PLATFORM_WEB
+		SoundManagerSetGain(m_Name.c_str(), gain);
+#else
 		ga_handle_setParamf(m_Handle, GA_HANDLE_PARAM_GAIN, gain);
+#endif
+
 	}
 
+#ifndef XENO_PLATFORM_WEB
 	void destroy_on_finish(ga_Handle* in_handle, void* in_context)
 	{	
 		Audio* audio = (Audio*)in_handle->audio;
 		audio->stop();
 	}
-
+#endif
 
 }}

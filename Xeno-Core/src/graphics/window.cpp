@@ -2,6 +2,11 @@
 
 namespace xeno {namespace graphics {
 	
+	void window_resize(GLFWwindow* window, int width, int height);
+	void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+	void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
+	void mouse_position_callback(GLFWwindow* window, double xpos, double ypos);
+
 	Window::Window(const char*title, int width, int height)
 	{
 		m_Title = title;
@@ -11,7 +16,11 @@ namespace xeno {namespace graphics {
 		if (!init())
 			glfwTerminate();
 
-		FontManager::add(new Font("Arial", "arial.ttf", 32));
+		FontManager::add(new Font("Arial", "res/arial.ttf", 32));
+
+#ifdef XENO_PLATFORM_WEB
+		FreeImage_Initialise();
+#endif
 		audio::AudioManager::init();
 
 		for (int i = 0; i < MAX_KEYS; i++)
@@ -32,6 +41,7 @@ namespace xeno {namespace graphics {
 	Window::~Window()
 	{
 		FontManager::clean();
+		TextureManager::clean();
 		audio::AudioManager::clean();
 		glfwTerminate();
 	}
@@ -58,11 +68,13 @@ namespace xeno {namespace graphics {
 		glfwSetCursorPosCallback(m_Window, mouse_position_callback);
 		glfwSwapInterval(0.0);
 
+#ifndef XENO_PLATFORM_WEB
  		if (glewInit() != GLEW_OK) 
 		{
 			std::cout << "Failed to initialize GLEW" << std::endl;
 			return false;
 		}
+#endif
 
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -100,10 +112,9 @@ namespace xeno {namespace graphics {
 		return m_MouseClicked[button];
 	}
 
-	void Window::getMousePosition(double &x, double &y) const
+	const maths::vec2& Window::getMousePosition() const
 	{
-		x = mx;
-		y = my;
+		return m_MousePosition;
 	}
 
 	void Window::clear() const
@@ -113,6 +124,18 @@ namespace xeno {namespace graphics {
 
 	void Window::update()
 	{	
+		GLenum error = glGetError();
+		if (error != GL_NO_ERROR)
+			std::cout << "OpenGL Error: " << error << std::endl;
+
+		glfwPollEvents();
+		glfwSwapBuffers(m_Window);
+
+		audio::AudioManager::update();
+	}
+
+	void Window::updateInput()
+	{
 		for (int i = 0; i < MAX_KEYS; i++)
 			m_KeyTyped[i] = m_Keys[i] && !m_KeyState[i];
 
@@ -121,9 +144,6 @@ namespace xeno {namespace graphics {
 
 		memcpy(m_KeyState, m_Keys, MAX_KEYS);
 		memcpy(m_MouseState, m_MouseButtons, MAX_BUTTONS);
-
-		glfwPollEvents();
-		glfwSwapBuffers(m_Window);
 	}
 
 	bool Window::closed() const
@@ -153,8 +173,8 @@ namespace xeno {namespace graphics {
 	void mouse_position_callback(GLFWwindow* window, double xpos, double ypos)
 	{
 		Window* win = (Window*)glfwGetWindowUserPointer(window);
-		win->mx = xpos;
-		win->my = ypos;
+		win->m_MousePosition.x = (float)xpos;
+		win->m_MousePosition.y = (float)ypos;
 	}
 
 }}

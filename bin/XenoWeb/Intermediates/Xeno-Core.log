@@ -1,0 +1,96 @@
+﻿Build started 9/6/2017 3:58:42 PM.
+     1>Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl- /O2 /Ob2 /Oi /Ot /Oy- /GL /D GLEW_STATIC /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D XENO_PLATFORM_WEB /D _MBCS /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\Xeno\bin\XenoWeb\Intermediates\\" /Fd"D:\Visual Studio Projects\Xeno\bin\XenoWeb\Intermediates\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt "ext\freetype-gl\platform.c" "ext\freetype-gl\texture-atlas.c" "ext\freetype-gl\texture-font.c" "ext\freetype-gl\vector.c" ext\freetype\src\autofit\autofit.c ext\freetype\src\base\ftbase.c ext\freetype\src\base\ftbbox.c ext\freetype\src\base\ftbitmap.c ext\freetype\src\base\ftdebug.c ext\freetype\src\base\ftfntfmt.c ext\freetype\src\base\ftfstype.c ext\freetype\src\base\ftgasp.c ext\freetype\src\base\ftglyph.c ext\freetype\src\base\ftgxval.c ext\freetype\src\base\ftinit.c ext\freetype\src\base\ftlcdfil.c ext\freetype\src\base\ftmm.c ext\freetype\src\base\ftotval.c ext\freetype\src\base\ftpatent.c ext\freetype\src\base\ftpfr.c ext\freetype\src\base\ftstroke.c ext\freetype\src\base\ftsynth.c ext\freetype\src\base\ftsystem.c ext\freetype\src\base\fttype1.c ext\freetype\src\base\ftwinfnt.c ext\freetype\src\bdf\bdf.c ext\freetype\src\cache\ftcache.c ext\freetype\src\cff\cff.c ext\freetype\src\cid\type1cid.c ext\freetype\src\gzip\ftgzip.c ext\freetype\src\lzw\ftlzw.c ext\freetype\src\pcf\pcf.c ext\freetype\src\pfr\pfr.c ext\freetype\src\psaux\psaux.c ext\freetype\src\pshinter\pshinter.c ext\freetype\src\psnames\psmodule.c ext\freetype\src\raster\raster.c ext\freetype\src\sfnt\sfnt.c ext\freetype\src\smooth\smooth.c ext\freetype\src\truetype\truetype.c ext\freetype\src\type1\type1.c ext\freetype\src\type42\type42.c ext\freetype\src\winfonts\winfnt.c "ext\gorilla-audio\common\gc_common.c" "ext\gorilla-audio\common\gc_thread.c" "ext\gorilla-audio\devices\ga_openal.c" "ext\gorilla-audio\ga.c" "ext\gorilla-audio\gau.c" "ext\gorilla-audio\ga_stream.c"
+         platform.c
+         texture-atlas.c
+     1>ext\freetype-gl\texture-atlas.c(96): warning C4013: 'glDeleteTextures' undefined; assuming extern returning int
+     1>ext\freetype-gl\texture-atlas.c(132): warning C4090: '=': different 'const' qualifiers
+     1>ext\freetype-gl\texture-atlas.c(236): warning C4018: '<': signed/unsigned mismatch
+     1>ext\freetype-gl\texture-atlas.c(330): warning C4013: 'glGenTextures' undefined; assuming extern returning int
+     1>ext\freetype-gl\texture-atlas.c(333): warning C4013: 'glBindTexture' undefined; assuming extern returning int
+     1>ext\freetype-gl\texture-atlas.c(333): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(334): warning C4013: 'glTexParameteri' undefined; assuming extern returning int
+     1>ext\freetype-gl\texture-atlas.c(334): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(334): error C2065: 'GL_TEXTURE_WRAP_S': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(334): error C2065: 'GL_CLAMP_TO_EDGE': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(335): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(335): error C2065: 'GL_TEXTURE_WRAP_T': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(335): error C2065: 'GL_CLAMP_TO_EDGE': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(336): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(336): error C2065: 'GL_TEXTURE_MAG_FILTER': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(336): error C2065: 'GL_LINEAR': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(337): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(337): error C2065: 'GL_TEXTURE_MIN_FILTER': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(337): error C2065: 'GL_LINEAR': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(344): warning C4013: 'glTexImage2D' undefined; assuming extern returning int
+     1>ext\freetype-gl\texture-atlas.c(344): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(344): error C2065: 'GL_RGBA': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(345): error C2065: 'GL_RGBA': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(345): error C2065: 'GL_UNSIGNED_BYTE': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(350): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(350): error C2065: 'GL_RGB': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(351): error C2065: 'GL_RGB': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(351): error C2065: 'GL_UNSIGNED_BYTE': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(355): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(355): error C2065: 'GL_LUMINANCE_ALPHA': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(356): error C2065: 'GL_LUMINANCE_ALPHA': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(356): error C2065: 'GL_UNSIGNED_BYTE': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(360): error C2065: 'GL_TEXTURE_2D': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(360): error C2065: 'GL_RED': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(361): error C2065: 'GL_RED': undeclared identifier
+     1>ext\freetype-gl\texture-atlas.c(361): error C2065: 'GL_UNSIGNED_BYTE': undeclared identifier
+         texture-font.c
+         vector.c
+         autofit.c
+         ftbase.c
+         ftbbox.c
+         ftbitmap.c
+         ftdebug.c
+         ftfntfmt.c
+         ftfstype.c
+         ftgasp.c
+         ftglyph.c
+         ftgxval.c
+         ftinit.c
+         ftlcdfil.c
+         ftmm.c
+         ftotval.c
+         ftpatent.c
+         ftpfr.c
+         Compiling...
+         ftstroke.c
+         ftsynth.c
+         ftsystem.c
+         fttype1.c
+         ftwinfnt.c
+         bdf.c
+         ftcache.c
+         cff.c
+         type1cid.c
+         ftgzip.c
+         ftlzw.c
+         pcf.c
+         pfr.c
+         psaux.c
+         pshinter.c
+         psmodule.c
+         raster.c
+         sfnt.c
+         smooth.c
+         truetype.c
+         Compiling...
+         type1.c
+         type42.c
+         winfnt.c
+         gc_common.c
+         gc_thread.c
+         ga_openal.c
+         ga.c
+         gau.c
+         ga_stream.c
+     1>Done Building Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.87

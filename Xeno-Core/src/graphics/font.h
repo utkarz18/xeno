@@ -18,7 +18,7 @@ namespace xeno {
 			std::string m_Filename;
 
 		public:
-			Font(const std::string& name, const std::string& filename, unsigned int size);
+			Font(const std::string& name, const std::string& filename, int size);
 
 			void setScale(float x, float y);
 

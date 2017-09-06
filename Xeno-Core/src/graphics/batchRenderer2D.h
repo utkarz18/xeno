@@ -27,6 +27,10 @@ namespace xeno {namespace graphics {
 			GLsizei m_IndexCount;
 			VertexData* m_Buffer;
 
+#ifdef XENO_PLATFORM_WEB
+			VertexData* m_BufferBase;
+#endif
+
 			std::vector<GLuint> m_TextureSlots;
 
 		public:

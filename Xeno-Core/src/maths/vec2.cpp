@@ -1,4 +1,5 @@
 #include "vec2.h"
+#include "vec3.h"
 
 namespace xeno { namespace maths {
 
@@ -12,6 +13,12 @@ namespace xeno { namespace maths {
 	{
 		this->x = x;
 		this->y = y;
+	}
+
+	vec2::vec2(const vec3& vector)
+	{
+		this->x = vector.x;
+		this->y = vector.y;
 	}
 
 	vec2& vec2::add(const vec2& other)
@@ -46,27 +53,6 @@ namespace xeno { namespace maths {
 		return *this;
 	}
 
-	vec2 operator +(vec2 left, const vec2& right)
-	{
-		return left.add(right);
-	}
-
-	vec2 operator -(vec2 left, const vec2& right)
-	{
-		return left.subtract(right);
-	}
-
-	vec2 operator *(vec2 left, const vec2& right)
-	{
-		return left.multiply(right);
-	}
-
-	vec2 operator /(vec2 left, const vec2& right)
-	{
-		return left.divide(right);
-	}
-
-
 	vec2& vec2::operator +=(vec2& other)
 	{
 		return add(other);
@@ -96,6 +82,60 @@ namespace xeno { namespace maths {
 	{
 		return !(*this == other);
 	}
+
+	float vec2::magnitude() const
+	{
+		return sqrt(x * x + y * y);
+	}
+
+	vec2 vec2::normalise() const
+	{
+		float length = magnitude();
+		return vec2(x / length, y / length);
+	}
+
+	float vec2::distance(const vec2& other) const
+	{
+		float a = x - other.x;
+		float b = y - other.y;
+		return sqrt(a * a + b * b);
+	}
+
+	float vec2::dot(const vec2& other) const
+	{
+		return x * other.x + y * other.y;
+	}
+
+	vec2 operator +(vec2 left, const vec2& right)
+	{
+		return left.add(right);
+	}
+
+	vec2 operator -(vec2 left, const vec2& right)
+	{
+		return left.subtract(right);
+	}
+
+	vec2 operator *(vec2 left, const vec2& right)
+	{
+		return left.multiply(right);
+	}
+
+	vec2 operator /(vec2 left, const vec2& right)
+	{
+		return left.divide(right);
+	}
+
+	vec2 operator +(vec2 left, float value)
+	{
+		return vec2(left.x + value, left.y + value);
+	}
+
+	vec2 operator *(vec2 left, float value)
+	{
+		return vec2(left.x * value, left.y * value);
+	}
+
 
 	std::ostream& operator <<(std::ostream& stream, const vec2& vector)
 	{

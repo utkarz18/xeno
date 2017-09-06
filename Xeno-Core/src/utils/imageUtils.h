@@ -1,10 +1,11 @@
 #pragma once
 
 #include <FreeImage.h>
+#include <FreeImage/Utilities.h>
 
 namespace xeno {
 	
-	static BYTE* load_image(const char* filename, GLsizei* width, GLsizei* height)
+	static BYTE* load_image(const char* filename, GLsizei* width, GLsizei* height, unsigned int* bits)
 	{
 		FREE_IMAGE_FORMAT fif = FIF_UNKNOWN;
 		FIBITMAP *dib = nullptr;
@@ -19,18 +20,19 @@ namespace xeno {
 		if (!dib)
 			return nullptr;
 
-		unsigned int pitch = FreeImage_GetPitch(dib);
-
 		BYTE* pixels = FreeImage_GetBits(dib);
 		*width = FreeImage_GetWidth(dib);
 		*height = FreeImage_GetHeight(dib);
-		int bits = FreeImage_GetBPP(dib);	
+		*bits = FreeImage_GetBPP(dib);	
 
-		int size = *width * *height * (bits / 8);
+#ifdef XENO_PLATFORM_WEB
+		SwapRedBlue32(dib);
+#endif
+
+		int size = *width * *height * (*bits / 8);
 		BYTE* result = new BYTE[size];
 		memcpy(result, pixels, size);
 		FreeImage_Unload(dib);
-
 		return result;
 	}
 }

@@ -1,27 +1,150 @@
-﻿LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\vc120.pdb'; linking object as if no debug info
-libvorbis.lib(analysis.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(analysis.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(bitrate.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(bitrate.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(block.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(block.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(codebook.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(codebook.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(envelope.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(envelope.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(floor0.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(floor0.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(floor1.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(floor1.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(info.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(info.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(lpc.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(lpc.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(lsp.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(lsp.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(mapping0.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(mapping0.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(mdct.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(mdct.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(psy.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(psy.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(registry.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(registry.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(res0.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(res0.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(sharedbook.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(sharedbook.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(smallft.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(smallft.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(synthesis.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(synthesis.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(vorbisfile.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(vorbisfile.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libvorbis.lib(window.obj) : warning LNK4099: PDB 'libvorbis.pdb' was not found with 'libvorbis.lib(window.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\libvorbis.pdb'; linking object as if no debug info
-libogg.lib(bitwise.obj) : warning LNK4099: PDB 'Project1.pdb' was not found with 'libogg.lib(bitwise.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\Project1.pdb'; linking object as if no debug info
-libogg.lib(framing.obj) : warning LNK4099: PDB 'Project1.pdb' was not found with 'libogg.lib(framing.obj)' or at 'E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\Project1.pdb'; linking object as if no debug info
-  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\Xeno-Core.exe
-  Xeno-Core.vcxproj -> E:\Softwares\VisualStudio Projects\Git\xeno\bin\Debug\Xeno-Core.pdb (Partial PDB)
+﻿Build started 9/6/2017 6:16:55 PM.
+     1>Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D GLEW_STATIC /D FT2_BUILD_LIBRARY /D WIN32 /D _LIB /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTCu /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\\" /Fd"D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt examples\game.cpp src\audio\audio.cpp src\graphics\batchRenderer2D.cpp src\graphics\font.cpp src\graphics\font_manager.cpp src\graphics\label.cpp src\graphics\layers\group.cpp src\graphics\layers\layer.cpp src\graphics\shader.cpp src\graphics\sprite.cpp src\graphics\window.cpp src\maths\mat4.cpp src\maths\vec2.cpp src\maths\vec3.cpp tilelayer.cpp
+         window.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\window.cpp(69): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+         batchRenderer2D.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(85): warning C4018: '<': signed/unsigned mismatch
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(142): warning C4018: '<': signed/unsigned mismatch
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(169): warning C4018: '<': signed/unsigned mismatch
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\batchrenderer2d.cpp(238): warning C4018: '<': signed/unsigned mismatch
+         audio.cpp
+         Generating Code...
+         Compiling...
+         tilelayer.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+         vec3.cpp
+         vec2.cpp
+         mat4.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\mat4.cpp(205): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+         sprite.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\sprite.cpp(6): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\sprite.cpp(12): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+         shader.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+         layer.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\layers\layer.cpp(39): warning C4018: '<': signed/unsigned mismatch
+         group.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\layers\group.cpp(12): warning C4018: '<': signed/unsigned mismatch
+         label.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+         font_manager.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\font_manager.cpp(41): warning C4018: '<': signed/unsigned mismatch
+         font.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\font.cpp(9): warning C4244: 'argument': conversion from 'unsigned int' to 'const float', possible loss of data
+         game.cpp
+     1>d:\visual studio projects\xeno\xeno-core\src\maths\math_func.h(15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(49): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(50): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+     1>d:\visual studio projects\xeno\xeno-core\src\graphics\renderable2d.h(51): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.exe" /INCREMENTAL /NOLOGO glfw3.lib glew32s.lib opengl32.lib FreeImage.lib OpenAL32.lib libvorbis.lib libogg.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.lib" /MACHINE:X86 "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\platform.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\texture-atlas.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\texture-font.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vector.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\autofit.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftbase.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftbbox.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftbitmap.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftdebug.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftfntfmt.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftfstype.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftgasp.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftglyph.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftgxval.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftinit.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftlcdfil.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftmm.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftotval.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftpatent.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftpfr.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftstroke.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftsynth.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftsystem.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\fttype1.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftwinfnt.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\bdf.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftcache.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\cff.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\type1cid.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftgzip.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ftlzw.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\pcf.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\pfr.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\psaux.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\pshinter.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\psmodule.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\raster.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\sfnt.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\smooth.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\truetype.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\type1.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\type42.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\winfnt.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\gc_common.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\gc_thread.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ga_openal.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ga.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\gau.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\ga_stream.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\game.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\main.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\audio.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\audio_manager.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\batchRenderer2D.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\buffer.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\indexbuffer.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vertexarray.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\font.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\font_manager.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\label.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\group.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\layer.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\shader.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\sprite.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\texture.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\texture_manager.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\window.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\mat4.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vec2.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vec3.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\vec4.obj"
+         "D:\Visual Studio Projects\Xeno\bin\Debug\Intermediates\tilelayer.obj"
+         Xeno-Core.vcxproj -> D:\Visual Studio Projects\Xeno\bin\Debug\Xeno-Core.exe
+     1>Done Building Project "D:\Visual Studio Projects\Xeno\Xeno-Core\Xeno-Core.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.97

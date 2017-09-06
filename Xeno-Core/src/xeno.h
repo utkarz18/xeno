@@ -1,14 +1,33 @@
 #pragma once
 
+#ifdef XENO_PLATFORM_WEB
+	#include <emscripten/emscripten.h>
+#endif
+
 #include "graphics/label.h"
 #include "graphics/sprite.h"
 #include "graphics/renderer2d.h"
 #include "graphics/batchrenderer2d.h"
 #include "graphics/window.h"
 #include "graphics/layers/layer.h"
+#include "graphics/layers/group.h"
+#include "graphics/texture_manager.h"
+
+#include "audio/audio.h"
+#include "audio/audio_manager.h"
 
 #include "maths/maths.h"
 #include "utils/timer.h"
+
+#include <functional>
+
+#ifdef XENO_PLATFORM_WEB
+static void dispatch_main(void* fp)
+{
+	std::function<void()>* func = (std::function<void()>*)fp;
+	(*func)();
+}
+#endif
 
 namespace xeno {
 
@@ -69,8 +88,13 @@ namespace xeno {
 			float updateTick = 1.0f / 60.0f;
 			unsigned int frames = 0;
 			unsigned int updates = 0;
+
+#ifdef XENO_PLATFORM_WEB
+			std::function<void()> mainLoop = [&]() {
+#else
 			while (!m_Window->closed())
 			{
+#endif
 				m_Window->clear();
 				if (m_Timer->elapsed() - updateTimer > updateTick)
 				{
@@ -90,7 +114,12 @@ namespace xeno {
 					updates = 0;
 					tick();
 				}
+#ifdef XENO_PLATFORM_WEB
+			};
+			emscripten_set_main_loop_arg(dispatch_main, &mainLoop, 0, 1);
+#else
 			}
+#endif
 		}
 	};
 }

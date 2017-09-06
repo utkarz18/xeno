@@ -1,7 +1,11 @@
 #pragma once
-#include<iostream>
+
+#include <iostream>
+#include <math.h>
 
 namespace xeno { namespace maths {
+
+	struct vec2;
 
 	struct vec3
 	{
@@ -9,6 +13,7 @@ namespace xeno { namespace maths {
 		
 		vec3();
 		vec3(const float& x, const float& y, const float& z);
+		vec3(const vec2& other);
 
 		vec3& add(const vec3& other);
 		vec3& subtract(const vec3& other);
@@ -22,6 +27,8 @@ namespace xeno { namespace maths {
 
 		bool operator ==(vec3& other);
 		bool operator !=(vec3& other);
+
+		float distance(const vec3& other) const;
 
 		friend vec3 operator +(vec3 left, const vec3& right);
 		friend vec3 operator -(vec3 left, const vec3& right);
