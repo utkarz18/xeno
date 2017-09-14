@@ -16,7 +16,7 @@ namespace xeno {namespace graphics {
 		if (!init())
 			glfwTerminate();
 
-		FontManager::add(new Font("Arial", "res/arial.ttf", 32));
+		FontManager::add(new Font("Arial", "res/arial1.ttf", 32));
 
 #ifdef XENO_PLATFORM_WEB
 		FreeImage_Initialise();

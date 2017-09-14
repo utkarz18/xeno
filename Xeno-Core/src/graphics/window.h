@@ -2,14 +2,7 @@
 
 #include <iostream>
 
-#ifdef XENO_PLATFORM_WEB
-	#define GLFW_INCLUDE_ES3
-	#include <GLFW/glfw3.h>
-#else
-	#include <GL/glew.h>
-#endif
-
-#include <GLFW/glfw3.h>
+#include <xenogl.h>
 
 #include "../maths/vec2.h"
 #include "font_manager.h"

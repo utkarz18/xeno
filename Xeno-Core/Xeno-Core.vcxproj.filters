@@ -294,9 +294,6 @@
     <ClCompile Include="src\graphics\layers\layer.cpp">
       <Filter>Source Files\graphics\layers</Filter>
     </ClCompile>
-    <ClCompile Include="examples\game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\graphics\texture_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -450,6 +447,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\graphics\texture_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xenogl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

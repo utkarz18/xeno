@@ -1,4 +1,4 @@
-#include "../src/xeno.h"
+#include <xeno.h>
 
 using namespace xeno;
 using namespace graphics;
@@ -32,7 +32,7 @@ public:
 		shader = new Shader("res/shaders/basic.es3.vert", "res/shaders/basic.es3.frag");
 		soundLoc = "test.ogg";
 #else	
-		shader = new Shader("src/shaders/basic.vert", "src/shaders/basic.frag");
+		shader = new Shader("res/shaders/basic.vert", "res/shaders/basic.frag");
 		soundLoc = "res/test.ogg";
 #endif
 		layer = new Layer(new BatchRenderer2D(), shader, maths::mat4::orthographic(-16.0f, 16.0f, -9.0f, 9.0f, -1.0f, 1.0f));

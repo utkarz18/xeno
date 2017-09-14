@@ -7,6 +7,7 @@ namespace xeno{namespace graphics{
 	{
 		m_FTAtlas = ftgl::texture_atlas_new(512, 512, 2);
 		m_FTFont = ftgl::texture_font_new_from_file(m_FTAtlas, m_Size, m_Filename.c_str());
+		XENO_ASSERT(m_FTFont, "Failed to load font '", filename.c_str(), "'!");
 	}
 
 	void Font::setScale(float x, float y)

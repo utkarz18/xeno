@@ -11,6 +11,7 @@ namespace xeno { namespace graphics {
 	{
 		delete m_IBO;
 		glDeleteBuffers(1, &m_VBO);
+		glDeleteVertexArrays(1, &m_VAO);
 	}
 
 	void BatchRenderer2D::init()

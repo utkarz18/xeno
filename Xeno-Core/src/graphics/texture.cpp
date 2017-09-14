@@ -24,7 +24,7 @@ namespace xeno { namespace graphics {
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
 		if (m_Bits != 24 && m_Bits != 32)
-			std::cout << "Error in image bits" << std::endl;
+			XENO_ERROR("[Texture] Unsupported image bit-depth! (%d)", m_Bits);
 
 		GLint internalFormat = m_Bits == 32 ? GL_RGBA : GL_RGB;
 		GLenum format = m_Bits == 32 ?

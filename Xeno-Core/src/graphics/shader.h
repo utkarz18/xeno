@@ -1,11 +1,7 @@
 #pragma once
 
-#ifdef XENO_PLATFORM_WEB
-	#define GLFW_INCLUDE_ES3
-	#include <GLFW/glfw3.h>
-#else
-	#include <GL/glew.h>
-#endif
+#include <xenogl.h>
+
 #include "../utils/fileUtils.h"
 #include "../maths/maths.h"
 

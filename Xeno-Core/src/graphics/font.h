@@ -1,8 +1,9 @@
 #pragma once
 
 #include "../../ext/freetype-gl/freetype-gl.h"
-#include "../maths/vec2.h"
+#include <maths/vec2.h>
 #include <string>
+#include <utils/log.h>
 
 namespace xeno {
 	namespace graphics {
